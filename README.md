@@ -1,6 +1,6 @@
 # Text-Classification-tutorial
 
-## Envrionment
+## Environment
 - Ubuntu 20.04
 - Python 3.9.5
 - CUDA 10.1
