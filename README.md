@@ -15,21 +15,25 @@ pip install -r requirements.txt
 ## Download Dataset
 - Currently support AG News dataset
     - Download link: https://www.kaggle.com/datasets/amananandrai/ag-news-classification-dataset
-```
+```bash
 mkdir data
-mv archive.zip data/
-cd data
+# organize data folder
+mkdir data/agnews
+mv archive.zip data/agnews/
+
+cd data/agnews
 unzip archive.zip
 rm archive.zip
+cd ...
 ```
 
 ## Run EDA (Exploratory Data Analysis)
-```
+```bash
 python simple_eda.py
 ```
 
 ## Run training / evaluations
-```
+```bash
 python main.py \
 --data_name agnews \
 --use_agnews_title \
